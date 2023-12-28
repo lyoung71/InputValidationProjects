@@ -1,15 +1,16 @@
 import pyinputplus as pyip
-import random, time
+import random
+import time
 
 
-numberOfQuestions = 10
-correctAnswers = 0
+number_of_questions = 10
+correct_answers = 0
 
-for questionNumber in range(numberOfQuestions):
+for question_number in range(1, number_of_questions + 1):
     num1 = random.randint(0, 9)
     num2 = random.randint(0, 9)
     answer = num1 * num2
-    prompt = f'#{questionNumber}: {num1} * {num2} = '
+    prompt = f'#{question_number}: {num1} * {num2} = '
 
     try:
         pyip.inputStr(
@@ -23,7 +24,7 @@ for questionNumber in range(numberOfQuestions):
         print('Out of tries!')
     else:
         print('Correct!')
-        correctAnswers += 1
+        correct_answers += 1
 
     time.sleep(1)
-    print(f'Score: {correctAnswers}/{numberOfQuestions}')
+    print(f'Score: {correct_answers}/{number_of_questions}')

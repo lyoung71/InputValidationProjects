@@ -1,6 +1,7 @@
 import pyinputplus as pyip
 
-def englishIdiot():
+
+def english_idiot():
     while True:
         prompt = 'Want to know how to keep an idiot busy for hours?\n'
         response = pyip.inputYesNo(prompt)
@@ -9,7 +10,7 @@ def englishIdiot():
     print('Thank you. Have a nice day.')
 
 
-def idiotaEspañol():
+def idiota_español():
     while True:
         prompt = 'Quieres saber cómo mantener a un idiota ocupado por horas?\n'
         response = pyip.inputYesNo(prompt, yesVal="sí", noVal="no")
@@ -18,7 +19,7 @@ def idiotaEspañol():
     print("Gracias. Que tenga un buen dia.")
 
 
-def idiotaPortuguês():
+def idiota_português():
     while True:
         prompt = "Quer saber como manter um idiota ocupado por horas?\n"
         response = pyip.inputYesNo(prompt, yesVal="sim", noVal="não")
@@ -26,4 +27,5 @@ def idiotaPortuguês():
             break
     print("Obrigado. Que tenha um bom dia.")
 
-print(idiotaPortuguês())
+
+print(idiota_português())

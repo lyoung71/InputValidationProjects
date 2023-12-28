@@ -1,7 +1,7 @@
 import pyinputplus as pyip
 
 
-def sandwichMaker():
+def sandwich_maker():
     prices = {
         'white': 2.00, 'wheat': 3.00, 'sourdough': 3.50,
         'chicken': 3.50, 'turkey': 4.50, 'ham': 3.00, 'tofu': 2.00,
@@ -38,13 +38,14 @@ def sandwichMaker():
     if mmlt == "yes":
         cost += prices['mmlt']
 
-    numOfSandwiches = pyip.inputInt(
+    num_of_sandwiches = pyip.inputInt(
         prompt="How many sandwiches?\n",
         min=1
     )
 
-    total_cost = float(cost * numOfSandwiches)
+    total_cost = float(cost * num_of_sandwiches)
 
     return f"Your total cost will be ${total_cost:.2f}"
 
-print(sandwichMaker())
+
+print(sandwich_maker())
